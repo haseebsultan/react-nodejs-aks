@@ -2,9 +2,12 @@ import axios from 'axios'
 
 export async function getAllUsers() {
 
-    axios.get('http://40.76.135.193:3080/customers')
-        .then(response => {return response.data.message;
-            console.log(response.data.message);} );
+    // axios.get('http://40.76.135.193:3080/customers')
+    //     .then(response => {return "haseeb";
+    //         console.log(response);} );
+
+    const response = await fetch('/customers');
+    return await response.json();
     
 }
 
