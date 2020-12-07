@@ -6,7 +6,7 @@ export async function getAllUsers() {
     //     .then(response => {return "haseeb";
     //         console.log(response);} );
 
-    const response = await fetch('http://40.76.135.193:3080/customers');
+    const response = await fetch('http://10.0.210.133:3080/customers');
     return await response.json();
     
 }
