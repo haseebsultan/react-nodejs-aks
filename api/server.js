@@ -8,20 +8,6 @@ const app = express(),
 // place holder for the data
 const users = [];
 
-var con = mysql.createConnection({
-  HOST: "23.22.199.231",
-  USER: "root",
-  PASSWORD: "root",
-  DB: "sampledb"
-});
-
-con.connect(function(err) {
-  if (err) throw err;
-  con.query("SELECT * FROM sample", function (err, result, fields) {
-    if (err) throw err;
-    console.log(result);
-  });
-});
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../my-app/build')));
