@@ -3,7 +3,7 @@ var mysql = require('mysql');
 const path = require('path');
 const app = express(),
       bodyParser = require("body-parser");
-      port = 3080;
+      port = 3000;
 
 // place holder for the data
 const users = [];
